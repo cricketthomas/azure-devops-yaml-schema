@@ -634,7 +634,7 @@ If you were using `NuGetInstaller@0` with `restoreMode: restore`, configure the 
 | NuGetCommand@2 task input | Value |
 |---------------------------|-------|
 | `command`                 | `restore` |
-| `restoreSolution`         | Path the .sln file |
+| `restoreSolution`         | Path the .sln file or csproj file |
 
 If you were using `NuGetInstaller@0` with `restoreMode: install`, configure the following inputs when using `NuGetCommand@2`.
 
@@ -648,7 +648,7 @@ If you were using `NuGetRestore@1`, configure the following inputs when using `N
 | NuGetCommand@2 task input | Value |
 |---------------------------|-------|
 | `command`                 | `restore` |
-| `restoreSolution`         | Path the .sln file |
+| `restoreSolution`         | Path the .sln file or csproj file |
 
 Similar to using `NuGetRestore@1` or the `NuGetInstaller@0` `restore` option, `NuGetCommand@2` has inputs to set the feed, decide between `select` or `config`, specify the path to the `NuGet.config` file, and use packages from nuget.org.
 
