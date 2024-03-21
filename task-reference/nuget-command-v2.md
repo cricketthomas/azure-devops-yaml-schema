@@ -28,7 +28,7 @@ Use this task to restore, pack, or push NuGet packages, or run a NuGet command. 
 - task: NuGetCommand@2
   inputs:
     command: 'restore' # 'restore' | 'pack' | 'push' | 'custom'. Required. Command. Default: restore.
-    restoreSolution: '**/*.sln' # string. Alias: solution. Required when command = restore. Path to solution, packages.config, or project.json. Default: **/*.sln.
+    restoreSolution: '**/*.sln' # string. Alias: solution. Required when command = restore. Path to solution, packages.config, or project.json. Default: **/*.sln. This also works using '**/*.csproj'.
     #packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg' # string. Alias: searchPatternPush. Required when command = push. Path to NuGet package(s) to publish. Default: $(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg.
     #nuGetFeedType: 'internal' # 'internal' | 'external'. Required when command = push. Target feed location. Default: internal.
     #publishVstsFeed: # string. Alias: feedPublish. Required when command = push && nuGetFeedType = internal. Target feed. 
